@@ -1,0 +1,158 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 0;
+  background-color: #232323;
+  color: white;
+}
+
+p {
+  text-align: center;
+  font-size: 24px;
+}
+
+h1 {
+  font-family: verdana, arial, sans-serif;
+	text-align: center;
+	line-height: 1.1;
+	font-weight: normal;
+	color: white;
+	background-color: steelblue;
+	margin: 0; 
+	text-transform: uppercase;
+	padding: 20px 0;
+  font-size: 72px;
+}
+
+button {
+  background: none;
+  padding: 10px;
+  border: none;
+  text-transform: uppercase;
+  height: 100%;
+  font-weight: bold;
+  color: steelblue;
+  letter-spacing: 1px;
+  outline: none;
+}
+
+#gameButtonArea {
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+#gameButtonArea > button {
+  border-radius: 30px;
+  width: 175px;
+  height: 175px;
+  margin: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+#button1 {
+  background: lightgreen;
+}
+
+#button2 {
+  background: lightblue;
+}
+
+#button3 {
+  background: pink;
+}
+
+#button4 {
+  background: lightyellow;
+}
+
+#button5 {
+  background: rosybrown;
+}
+
+#button6 {
+  background: navajowhite;
+}
+
+#button7 {
+  background: mediumpurple;
+}
+
+#button8 {
+  background: grey;
+}
+
+#button1:active, #button1.lit {
+  background: green;
+}
+
+#button2:active, #button2.lit {
+  background: blue;
+}
+
+#button3:active, #button3.lit {
+  background: red;
+}
+
+#button4:active, #button4.lit {
+  background: gold;
+}
+
+#button5:active, #button5.lit {
+  background: sienna;
+}
+
+#button6:active, #button6.lit {
+  background: darkorange;
+}
+
+#button7:active, #button7.lit {
+  background: darkviolet;
+}
+
+#button8:active, #button8.lit {
+  background: black;
+}
+
+#bar {
+	background-color: white;
+	height: 30px;
+	text-align: center;
+}
+
+#bar > button {
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-mpz-transition: all 0.3s;
+}
+
+.selected {
+  color: white;
+  background-color: steelblue;
+}
+
+#bar > button:hover {
+  color: white;
+  background-color: steelblue;
+}
+
+#spacing {
+  display: inline-block;
+  width: 20%;
+  color: steelblue;
+}
+
+#time {
+  font-weight: bold;
+}
+
+#explainMode {
+  font-size: 16px;
+}
+
+.invisible {
+  visibility: hidden;
+}

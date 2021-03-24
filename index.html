@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello!</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <h1>Light and Sound Memory Game</h1>
+    
+    <div id="bar">
+      <button id="startBtn" onclick="startGame()">
+        Start
+      </button>
+      <button id="stopBtn" class="hidden" onclick="stopGame()">
+        Stop
+      </button>
+      <span id="spacing"></span>
+      <button id="easyBtn" class="selected" onclick="setEasy()">
+        Easy
+      </button>
+      <button id="hardBtn" onclick="setHard()">
+        Hard
+      </button>     
+    </div>
+    
+    <p id="message">
+      Repeat the pattern back to win the game!
+    </p>
+    
+    <p id="explainMode"></p>
+    
+    <p id="timer">
+        You have <span id="time"></span> seconds left.
+    </p>
+    
+    <div id="gameButtonArea">
+      <button id="button1" onclick="guess(1)" onmousedown="startTone(1), showImg(1)" onmouseup="stopTone(1), hideImg(1)">
+        <img id="img1" class="invisible" src="https://cdn.glitch.com/7d299173-5bb9-4926-a7d1-e941ff945041%2Fthumbnails%2Flime.jpg?1616458638756" alt="lime" width="75%" height="60%">
+        <audio id="audio1" src="https://cdn.glitch.com/7d299173-5bb9-4926-a7d1-e941ff945041%2Fpowerup.mp3?v=1616461306664"></audio>
+      </button>
+      <button id="button2" onclick="guess(2)" onmousedown="startTone(2), showImg(2)" onmouseup="stopTone(2), hideImg(2)">
+        <img id="img2" class="invisible" src="https://cdn.glitch.com/7d299173-5bb9-4926-a7d1-e941ff945041%2Fblueberries.jfif?1616458863895" alt="blueberries" width="75%" height="60%">
+        <audio id="audio2" src="https://cdn.glitch.com/7d299173-5bb9-4926-a7d1-e941ff945041%2Fjar.mp3?v=1616461510282"></audio>
+      </button>
+      <button id="button3" onclick="guess(3)" onmousedown="startTone(3), showImg(3)" onmouseup="stopTone(3), hideImg(3)">
+        <img id="img3" class="invisible" src="https://cdn.glitch.com/7d299173-5bb9-4926-a7d1-e941ff945041%2Fthumbnails%2Fapple.png?1616458858456" alt="apple" width="75%" height="60%">
+        <audio id="audio3" src="https://cdn.glitch.com/7d299173-5bb9-4926-a7d1-e941ff945041%2Fhighpitch.mp3?v=1616461511813"></audio>
+      </button>
+      <button id="button4" onclick="guess(4)" onmousedown="startTone(4), showImg(4)" onmouseup="stopTone(4), hideImg(4)">
+        <img id="img4" class="invisible" src="https://cdn.glitch.com/7d299173-5bb9-4926-a7d1-e941ff945041%2Fthumbnails%2Fbanana.jpg?1616458854725" alt="banana" width="75%" height="60%">
+        <audio id="audio4" src="https://cdn.glitch.com/7d299173-5bb9-4926-a7d1-e941ff945041%2Fdigital.mp3?v=1616461514396"></audio>
+      </button>
+      <button id="button5" onclick="guess(5)" onmousedown="startTone(5), showImg(5)" onmouseup="stopTone(5), hideImg(5)">
+        <img id="img5" class="invisible" src="https://cdn.glitch.com/7d299173-5bb9-4926-a7d1-e941ff945041%2Fthumbnails%2Fcoconut.jpg?1616458849409" alt="coconut" width="75%" height="60%">
+        <audio id="audio5" src="https://cdn.glitch.com/7d299173-5bb9-4926-a7d1-e941ff945041%2Fbzz.mp3?v=1616461517619"></audio>
+      </button>
+      <button id="button6" onclick="guess(6)" onmousedown="startTone(6), showImg(6)" onmouseup="stopTone(6), hideImg(6)">
+        <img id="img6" class="invisible" src="https://cdn.glitch.com/7d299173-5bb9-4926-a7d1-e941ff945041%2Fthumbnails%2Forange.jpg?1616458841873" alt="orange" width="75%" height="60%">
+        <audio id="audio6" src="https://cdn.glitch.com/7d299173-5bb9-4926-a7d1-e941ff945041%2Fhorn.mp3?v=1616463125019"></audio>
+      </button>
+      <button id="button7" onclick="guess(7)" onmousedown="startTone(7), showImg(7)" onmouseup="stopTone(7), hideImg(7)">
+        <img id="img7" class="invisible" src="https://cdn.glitch.com/7d299173-5bb9-4926-a7d1-e941ff945041%2Fthumbnails%2Fgrapes.webp?1616458846023" alt="grapes" width="75%" height="60%">
+        <audio id="audio7" src="https://cdn.glitch.com/7d299173-5bb9-4926-a7d1-e941ff945041%2Fbell.mp3?v=1616463125005"></audio>
+      </button>
+      <button id="button8" onclick="guess(8)" onmousedown="startTone(8), showImg(8)" onmouseup="stopTone(8), hideImg(8)">
+        <img id="img8" class="invisible" src="https://cdn.glitch.com/7d299173-5bb9-4926-a7d1-e941ff945041%2Fthumbnails%2Fblackberries.jpg?1616458844295" alt="blackberries" width="75%" height="60%">
+        <audio id="audio8" src="https://cdn.glitch.com/7d299173-5bb9-4926-a7d1-e941ff945041%2Fdrill.mp3?v=1616461576437"></audio>
+      </button>
+    </div>
+    
+  </body>
+</html>
