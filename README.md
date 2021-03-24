@@ -44,8 +44,10 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-![http://g.recordit.co/MnON82b0KT.gif](your-link-here)
-<br><img src="http://g.recordit.co/MnON82b0KT.gif"><br>
+![](your-link-here)
+<br> **Note:** Any button presses that do not cause the picture to light up are because I clicked and let go too quickly. It works perfectly fine in the actual program.
+<br><img src="http://g.recordit.co/MnON82b0KT.gif">
+<br><img src="http://g.recordit.co/0edduu9Feh.gif">
 
 
 ## Reflection Questions
