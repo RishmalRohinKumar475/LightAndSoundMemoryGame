@@ -45,9 +45,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 ![http://g.recordit.co/MnON82b0KT.gif](your-link-here)
-<br> I am very sorry that this gif does not seem to be working for me. I did not know GitHub had a limit for how long a gif could be for it to be displayed in a README file,
-so I have too many features to be shown in one gif. The below gif shows the beginning of a winning playthrough on easy difficulty. If you copy and paste the above link, you
-should be able to see the entire gif. If not, please email me at rishmal.rohinkumar@gmail.com so we can try to work something out.
+<br> I am very sorry that this gif does not seem to be working for me. I did not know GitHub had a limit for how long a gif could be for it to be displayed in a README file, so I have too many features to be shown in one gif. The below gif shows the beginning of a winning playthrough on easy difficulty. If you copy and paste the above link in your browser, you should be able to see the entire gif. If not, please email me at rishmal.rohinkumar@gmail.com so we can try to work something out.
 <br> **Note:** Any button presses that do not cause the picture to light up are because I clicked and let go too quickly. It works perfectly fine in the actual program.
 <br><img src="http://g.recordit.co/MnON82b0KT.gif">
 
